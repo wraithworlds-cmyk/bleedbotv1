@@ -23,10 +23,9 @@ class Bot(commands.Bot):
 
     async def setup_hook(self):
         for extension in (
-            "cogs.database",
-            "cogs.moderation",
-            "cogs.welcome",
-            "cogs.tickets",
+            "database",
+            "moderation",
+            "tickets",
         ):
             await self.load_extension(extension)
 
